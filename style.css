@@ -1,6 +1,6 @@
 /* InstaFolio-template-v3 | mouhatech.com */
 ::selection {
-    background-color: #8a5cf673;
+    background-color: rgba(249, 115, 22, 0.6);
     color: #fff;
 }
 * {
@@ -37,7 +37,7 @@ body {
 
 
 .gradient-text {
-    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    background: linear-gradient(135deg, #f97316 0%, #f7812d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -45,18 +45,18 @@ body {
 .glass-effect {
     background: rgba(17, 24, 39, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(139, 92, 246, 0.2);
+    border: 1px solid rgba(249, 115, 22, 0.2);
 }
 .card-hover {
     transition: all 0.3s ease;
 }
 .card-hover:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 20px 40px rgba(249, 115, 22, 0.3);
 }
 .tech-badge {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
-    border: 1px solid rgba(139, 92, 246, 0.3);
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(249, 115, 22, 0.05) 100%);
+    border: 1px solid rgba(249, 115, 22, 0.3);
 }
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
@@ -66,7 +66,7 @@ body {
     animation: float 6s ease-in-out infinite;
 }
 .glow-effect {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.5);
 }
 
 /* Section Mes outils - Animation de défilement infini (CSS pur nécessaire) */
