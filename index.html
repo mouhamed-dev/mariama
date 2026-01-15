@@ -1,0 +1,817 @@
+<!-- InstaFolio-template-v3 | mouhatech.com -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Moustapha Ndao | Ingénieur Cybersécurité</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="libs/animate.min.css">
+    <link rel="icon" href="images/moustapha.jpg">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8b5cf6',
+                        dark: '#020617',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="Moustapha Ndao | Ingénieur Cybersécurité" />
+    <meta property="og:description" content="Passionné par la cybersécurité depuis plus de 8 ans, je me spécialise dans la protection des systèmes d'information, l'analyse de menaces et la réponse aux incidents." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://moustapha.mouhatech.com/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/mouhamed-dev/moustapha/19a57b35da2e3632dd1840bacc435afa57ab72e9/images/moustapha.jpg" />
+    <meta property="og:site_name" content="Moustapha Ndao | Portfolio" />
+
+</head>
+<body class="bg-dark text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="hover:text-primary transition"><div class="text-2xl font-bold gradient-text">Moustapha Ndao</div></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#apropos" class="hover:text-primary transition">À propos</a>
+                    <a href="#competences" class="hover:text-primary transition">Compétences</a>
+                    <a href="#experiences" class="hover:text-primary transition">Expériences</a>
+                    <a href="#projets" class="hover:text-primary transition">Projets</a>
+                    <a href="#certifications" class="hover:text-primary transition">Certifications</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-primary relative w-6 h-6">
+                    <!-- Icône Hamburger -->
+                    <svg id="hamburger-icon" class="w-6 h-6 absolute inset-0 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <!-- Icône X (fermeture) -->
+                    <svg id="close-icon" class="w-6 h-6 absolute inset-0 transition-opacity duration-300 opacity-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4">
+                <a href="#accueil" class="block hover:text-primary transition">Accueil</a>
+                <a href="#apropos" class="block hover:text-primary transition">À propos</a>
+                <a href="#competences" class="block hover:text-primary transition">Compétences</a>
+                <a href="#experiences" class="block hover:text-primary transition">Expériences</a>
+                <a href="#projets" class="block hover:text-primary transition">Projets</a>
+                <a href="#certifications" class="block hover:text-primary transition">Certifications</a>
+                <a href="#contact" class="block hover:text-primary transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- InstaFolio-template-v3 | mouhatech.com -->
+    <!-- Hero Section -->
+    <section id="accueil" class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <!-- Colonne texte pour desktop -->
+            <div class="text-center md:text-left order-2 md:order-1">
+                <h1 class="text-5xl md:text-7xl font-bold mb-8">
+                    Bonjour, je suis <span id="name" class="gradient-text">Moustapha Ndao</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-10">
+                    Ingénieur Cybersécurité spécialisé en protection des infrastructures critiques et analyse de menaces
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition glow-effect">
+                        Me Contacter
+                    </a>
+                    <a href="#projets" class="px-8 py-4 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition">
+                        Voir mes Projets
+                    </a>
+                </div>
+            </div>
+            <!-- profil -->
+            <div class="md:flex justify-center mt-10 md:mt-0 order-1 md:order-2">
+                <div class="text-left md:hidden">
+                    <div class="inline-flex items-center px-3 mb-16 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
+                        ingénieur cybersécurité
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                <div class="relative float-animation">
+                    <div class="absolute inset-0 bg-primary/20 rounded-full blur-3xl"></div>
+                    <div class="bg-white/20 rounded-full">
+                        <img src="images/moustapha.jpg" 
+                            alt="Moustapha Ndao" 
+                            class="relative w-72 h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-primary/50 wow animate__animated animate__zoomInUp" data-wow-delay="0.1s" data-wow-duration="0.8s">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- InstaFolio-template-v3 | mouhatech.com -->
+    <!-- À propos Section -->
+    <section id="apropos" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                À <span class="gradient-text">Propos</span>
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto mb-12"></div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-dark rounded-2xl px-4 py-6 md:p-12 border border-primary/20">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Passionné par la cybersécurité depuis plus de 8 ans, je me spécialise dans la protection des systèmes d'information, 
+                        l'analyse de menaces et la réponse aux incidents. Mon expertise couvre la sécurité des réseaux, 
+                        la cryptographie, l'audit de sécurité et la conformité réglementaire.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        J'ai travaillé sur des projets critiques pour des entreprises du secteur bancaire, de la santé et des infrastructures 
+                        gouvernementales. Ma mission est de protéger les données sensibles et d'assurer la continuité des services 
+                        face aux cybermenaces croissantes.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6 mt-8">
+                        <div class="text-center p-6 tech-badge rounded-lg hover:bg-white/[0.05] wow animate__animated animate__bounceIn" data-wow-delay="0.1s" data-wow-duration="1.5s">
+                            <div class="text-3xl font-bold text-primary mb-2">50+</div>
+                            <div class="text-gray-400">Projets Sécurisés</div>
+                        </div>
+                        <div class="text-center p-6 tech-badge rounded-lg hover:bg-white/[0.05] wow animate__animated animate__bounceIn" data-wow-delay="0.3s" data-wow-duration="1.5s">
+                            <div class="text-3xl font-bold text-primary mb-2">8+</div>
+                            <div class="text-gray-400">Années d'Expérience</div>
+                        </div>
+                        <div class="text-center p-6 tech-badge rounded-lg hover:bg-white/[0.05] wow animate__animated animate__bounceIn" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                            <div class="text-3xl font-bold text-primary mb-2">15+</div>
+                            <div class="text-gray-400">Certifications</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- InstaFolio-template-v3 | mouhatech.com -->
+    <!-- Compétences Section -->
+    <section id="competences" class="py-20 px-6 bg-white/[0.02]">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                Mes <span class="gradient-text">Compétences</span>
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Compétence 1 -->
+                <div class="bg-white/[0.02] rounded-xl p-6 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="text-primary text-4xl text-center mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold text-center mb-3">Sécurité des Réseaux</h3>
+                    <p class="text-gray-400 mb-4">Configuration et sécurisation de firewalls, IDS/IPS, VPN, segmentation réseau</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Cisco ASA</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Palo Alto</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Fortinet</span>
+                    </div>
+                </div>
+                <!-- Compétence 2 -->
+                <div class="bg-white/[0.02] rounded-xl p-6 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="text-primary text-4xl text-center mb-4">🔐</div>
+                    <h3 class="text-xl font-bold text-center mb-3">Cryptographie</h3>
+                    <p class="text-gray-400 mb-4">Implémentation de solutions cryptographiques, gestion de clés, PKI</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">AES</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">RSA</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">TLS/SSL</span>
+                    </div>
+                </div>
+                <!-- Compétence 3 -->
+                <div class="bg-white/[0.02] rounded-xl p-6 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="text-primary text-4xl text-center mb-4">🔍</div>
+                    <h3 class="text-xl font-bold text-center mb-3">Analyse de Menaces</h3>
+                    <p class="text-gray-400 mb-4">Détection, analyse et réponse aux cybermenaces, threat intelligence</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">SIEM</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">SOAR</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Malware Analysis</span>
+                    </div>
+                </div>
+                <!-- Compétence 4 -->
+                <div class="bg-white/[0.02] rounded-xl p-6 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="text-primary text-4xl text-center mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-center mb-3">Pentesting</h3>
+                    <p class="text-gray-400 mb-4">Tests d'intrusion, audits de sécurité, évaluation de vulnérabilités</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Kali Linux</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Metasploit</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Burp Suite</span>
+                    </div>
+                </div>
+                <!-- Compétence 5 -->
+                <div class="bg-white/[0.02] rounded-xl p-6 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                    <div class="text-primary text-4xl text-center mb-4">☁️</div>
+                    <h3 class="text-xl font-bold text-center mb-3">Cloud Security</h3>
+                    <p class="text-gray-400 mb-4">Sécurisation des infrastructures cloud AWS, Azure, GCP</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">AWS Security</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Azure AD</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Kubernetes</span>
+                    </div>
+                </div>
+                <!-- Compétence 6 -->
+                <div class="bg-white/[0.02] rounded-xl p-6 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                    <div class="text-primary text-4xl text-center mb-4">📋</div>
+                    <h3 class="text-xl font-bold text-center mb-3">Conformité & Audit</h3>
+                    <p class="text-gray-400 mb-4">ISO 27001, RGPD, PCI-DSS, audits de conformité</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">ISO 27001</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">RGPD</span>
+                        <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">PCI-DSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- InstaFolio-template-v3 | mouhatech.com -->
+    <!-- Expériences Section -->
+    <section id="experiences" class="py-20 px-6 overflow-x-hidden">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                Mes <span class="gradient-text">Expériences</span>
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto mb-12"></div>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Expérience 1 -->
+                <div class="bg-white/[0.05] rounded-xl px-4 py-6 md:p-8 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Senior Security Engineer</h3>
+                            <p class="text-xl text-gray-300">TechSecure Solutions</p>
+                        </div>
+                        <span class="text-primary font-semibold mt-2 md:mt-0">2021 - Présent</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Responsable de la sécurité des infrastructures critiques pour des clients du secteur bancaire. 
+                        Conception et déploiement de solutions de sécurité, gestion d'équipe de 5 personnes, 
+                        réponse aux incidents critiques 24/7.
+                    </p>
+                    <ul class="list-inside text-gray-400 space-y-2">
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Réduction de 60% des incidents de sécurité grâce à l'implémentation d'un SOC</li>
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Mise en place d'une architecture Zero Trust pour 3 clients majeurs</li>
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Formation de 50+ collaborateurs aux bonnes pratiques de sécurité</li>
+                    </ul>
+                </div>
+                <!-- Expérience 2 -->
+                <div class="bg-white/[0.05] rounded-xl  px-4 py-6 md:p-8 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInRight" data-wow-delay="0.2s">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Cybersecurity Consultant</h3>
+                            <p class="text-xl text-gray-300">CyberDefense Consulting</p>
+                        </div>
+                        <span class="text-primary font-semibold mt-2 md:mt-0">2019 - 2021</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Consultant en cybersécurité pour des entreprises du secteur de la santé et des infrastructures publiques. 
+                        Réalisation d'audits de sécurité, tests d'intrusion et accompagnement à la conformité RGPD.
+                    </p>
+                    <ul class="list-inside text-gray-400 space-y-2">
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Réalisation de 30+ audits de sécurité et tests d'intrusion</li>
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Accompagnement de 10 entreprises à la conformité RGPD</li>
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Découverte et correction de 200+ vulnérabilités critiques</li>
+                    </ul>
+                </div>
+                <!-- Expérience 3 -->
+                <div class="bg-white/[0.05] rounded-xl  px-4 py-6 md:p-8 border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Security Analyst</h3>
+                            <p class="text-xl text-gray-300">SecureNet Corporation</p>
+                        </div>
+                        <span class="text-primary font-semibold mt-2 md:mt-0">2017 - 2019</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Analyste en sécurité au sein du SOC. Surveillance 24/7, analyse d'alertes, 
+                        investigation d'incidents et création de règles de détection.
+                    </p>
+                    <ul class="list-inside text-gray-400 space-y-2">
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Analyse de 5000+ alertes de sécurité par mois</li>
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Réponse à 200+ incidents de sécurité</li>
+                        <li><i class="fa-solid fa-circle-check text-primary mr-3"></i>Développement de 50+ règles de détection SIEM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- InstaFolio-template-v3 | mouhatech.com -->
+    <!-- Projets Section -->
+    <section id="projets" class="py-20 px-6 bg-white/[0.02]">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                Mes <span class="gradient-text">Projets</span>
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Projet 1 -->
+                <div class="bg-white/[0.02] rounded-xl overflow-hidden border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <img src="images/banque.jpg" 
+                         alt="Projet SOC" 
+                         class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Centre d'Opérations de Sécurité (SOC)</h3>
+                        <p class="text-gray-400 mb-4">
+                            Conception et déploiement d'un SOC pour une banque internationale avec monitoring 24/7, 
+                            SIEM et automatisation des réponses.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">SIEM</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">SOAR</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Python</span>
+                        </div>
+                        <a href="#" onclick="projet(event)" class="text-primary font-semibold"><span class="hover:underline">En savoir plus</span> →</a>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="bg-white/[0.02] rounded-xl overflow-hidden border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <img src="images/Threat Intelligence platform.jpg" 
+                         alt="Architecture Zero Trust" 
+                         class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Architecture Zero Trust</h3>
+                        <p class="text-gray-400 mb-4">
+                            Migration vers une architecture Zero Trust pour une entreprise de 5000 employés 
+                            avec authentification multi-facteurs et micro-segmentation.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Zero Trust</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">IAM</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Azure AD</span>
+                        </div>
+                        <a href="#" onclick="projet(event)" class="text-primary font-semibold"><span class="hover:underline">En savoir plus</span> →</a>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="bg-white/[0.02] rounded-xl overflow-hidden border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <img src="images/Plateforme Threat Intelligence.jpg" 
+                         alt="Plateforme Threat Intelligence" 
+                         class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Plateforme Threat Intelligence</h3>
+                        <p class="text-gray-400 mb-4">
+                            Développement d'une plateforme de collecte et d'analyse de threat intelligence 
+                            avec intégration de multiples sources de données.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Elasticsearch</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">API</span>
+                        </div>
+                        <a href="#" onclick="projet(event)" class="text-primary font-semibold"><span class="hover:underline">En savoir plus</span> →</a>
+                    </div>
+                </div>
+                <!-- Projet 4 -->
+                <div class="bg-white/[0.02] rounded-xl overflow-hidden border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <img src="images/intrusion.jpg" 
+                         alt="Système de Détection d'Intrusion" 
+                         class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Système de Détection d'Intrusion</h3>
+                        <p class="text-gray-400 mb-4">
+                            Développement d'un système IDS/IPS personnalisé avec machine learning pour la détection 
+                            d'anomalies en temps réel.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Machine Learning</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">IDS/IPS</span>
+                        </div>
+                        <a href="#" onclick="projet(event)" class="text-primary font-semibold"><span class="hover:underline">En savoir plus</span> →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="bg-white/[0.02] rounded-xl overflow-hidden border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                    <img src="images/sécurité.jpg" 
+                         alt="Audit de Sécurité Cloud" 
+                         class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Audit de Sécurité Cloud AWS</h3>
+                        <p class="text-gray-400 mb-4">
+                            Audit complet de sécurité pour une infrastructure AWS hébergeant des données sensibles, 
+                            avec rapport détaillé et plan de remédiation.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">AWS</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Cloud Security</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Compliance</span>
+                        </div>
+                        <a href="#" onclick="projet(event)" class="text-primary font-semibold"><span class="hover:underline">En savoir plus</span> →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="bg-white/[0.02] rounded-xl overflow-hidden border border-primary/20 hover:border-primary/80 transition duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+                    <img src="images/sensibilisation.jpg" 
+                         alt="Programme de Sensibilisation" 
+                         class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Programme de Sensibilisation Cybersécurité</h3>
+                        <p class="text-gray-400 mb-4">
+                            Création et déploiement d'un programme complet de sensibilisation avec simulations 
+                            de phishing et formations interactives.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Formation</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Phishing</span>
+                            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">Awareness</span>
+                        </div>
+                        <a href="#" onclick="projet(event)" class="text-primary font-semibold"><span class="hover:underline">En savoir plus</span> →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                Mes <span class="gradient-text">Certifications</span>
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Certification 1 -->
+                <div class="bg-primary/[0.07] rounded-xl p-6 text-center border border-primary/30 hover:bg-primary/20 transition duration-300">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h3 class="text-lg font-bold mb-2">CISSP</h3>
+                    <p class="text-gray-400 text-sm mb-2">Certified Information Systems Security Professional</p>
+                    <p class="text-primary text-sm font-semibold">2023</p>
+                </div>
+                <!-- Certification 2 -->
+                <div class="bg-primary/[0.07] rounded-xl p-6 text-center border border-primary/30 hover:bg-primary/20 transition duration-300">
+                    <div class="text-5xl mb-4">🛡️</div>
+                    <h3 class="text-lg font-bold mb-2">CEH</h3>
+                    <p class="text-gray-400 text-sm mb-2">Certified Ethical Hacker</p>
+                    <p class="text-primary text-sm font-semibold">2022</p>
+                </div>
+                <!-- Certification 3 -->
+                <div class="bg-primary/[0.07] rounded-xl p-6 text-center border border-primary/30 hover:bg-primary/20 transition duration-300">
+                    <div class="text-5xl mb-4">☁️</div>
+                    <h3 class="text-lg font-bold mb-2">AWS Security</h3>
+                    <p class="text-gray-400 text-sm mb-2">AWS Certified Security - Specialty</p>
+                    <p class="text-primary text-sm font-semibold">2022</p>
+                </div>
+                <!-- Certification 4 -->
+                <div class="bg-primary/[0.07] rounded-xl p-6 text-center border border-primary/30 hover:bg-primary/20 transition duration-300">
+                    <div class="text-5xl mb-4">🔐</div>
+                    <h3 class="text-lg font-bold mb-2">CISM</h3>
+                    <p class="text-gray-400 text-sm mb-2">Certified Information Security Manager</p>
+                    <p class="text-primary text-sm font-semibold">2021</p>
+                </div>
+                <!-- Certification 5 -->
+                <div class="bg-primary/[0.07] rounded-xl p-6 text-center border border-primary/30 hover:bg-primary/20 transition duration-300">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h3 class="text-lg font-bold mb-2">OSCP</h3>
+                    <p class="text-gray-400 text-sm mb-2">Offensive Security Certified Professional</p>
+                    <p class="text-primary text-sm font-semibold">2021</p>
+                </div>
+                <!-- Certification 6 -->
+                <div class="bg-primary/[0.07] rounded-xl p-6 text-center border border-primary/30 hover:bg-primary/20 transition duration-300">
+                    <div class="text-5xl mb-4">🔍</div>
+                    <h3 class="text-lg font-bold mb-2">GCIH</h3>
+                    <p class="text-gray-400 text-sm mb-2">GIAC Certified Incident Handler</p>
+                    <p class="text-primary text-sm font-semibold">2020</p>
+                </div>
+                <!-- Certification 7 -->
+                <div class="bg-primary/[0.07] rounded-xl p-6 text-center border border-primary/30 hover:bg-primary/20 transition duration-300">
+                    <div class="text-5xl mb-4">📋</div>
+                    <h3 class="text-lg font-bold mb-2">ISO 27001</h3>
+                    <p class="text-gray-400 text-sm mb-2">Lead Auditor ISO 27001</p>
+                    <p class="text-primary text-sm font-semibold">2020</p>
+                </div>
+                <!-- Certification 8 -->
+                <div class="bg-primary/[0.07] rounded-xl p-6 text-center border border-primary/30 hover:bg-primary/20 transition duration-300">
+                    <div class="text-5xl mb-4">🌐</div>
+                    <h3 class="text-lg font-bold mb-2">CCSP</h3>
+                    <p class="text-gray-400 text-sm mb-2">Certified Cloud Security Professional</p>
+                    <p class="text-primary text-sm font-semibold">2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section id="formation" class="py-20 px-6 bg-white/[0.02] overflow-x-hidden">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                Ma <span class="gradient-text">Formation</span>
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto mb-12"></div>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Formation 1 -->
+                <div class="glass-effect rounded-xl  px-4 py-6 md:p-8 border border-primary/30 hover:bg-primary/10 transition duration-300 wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Master en Cybersécurité</h3>
+                            <p class="text-xl text-gray-300">École Supérieure d'Ingénierie en Cybersécurité</p>
+                        </div>
+                        <span class="text-primary font-semibold mt-2 md:mt-0">2015 - 2017</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Spécialisation en sécurité des systèmes d'information, cryptographie appliquée et gestion des risques. 
+                        Mention Très Bien. Mémoire sur "Les nouvelles menaces APT et leur détection".
+                    </p>
+                </div>
+                <!-- Formation 2 -->
+                <div class="glass-effect rounded-xl px-4 py-6 md:p-8 border border-primary/30 hover:bg-primary/10 transition duration-300 wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Licence en Informatique</h3>
+                            <p class="text-xl text-gray-300">École Nationale d'Ingénieurs / Faculté des Sciences</p>
+                        </div>
+                        <span class="text-primary font-semibold mt-2 md:mt-0">2012 - 2015</span>
+                    </div>
+                    <p class="text-gray-400">
+                        FFormation fondamentale en informatique : algorithmique, systèmes, bases de données et réseaux.
+                        Introduction à la cybersécurité, sécurisation des applications web et notions d’analyse de malware.
+                        Projets académiques en réseaux et sécurité.
+                    </p>
+                </div>
+                <!-- Formation 3 -->
+                <div class="glass-effect rounded-xl px-4 py-6 md:p-8 border border-primary/30 hover:bg-primary/10 transition duration-300 wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary mb-2">Baccalauréat Scientifique</h3>
+                            <p class="text-xl text-gray-300">Lycée Seydina Limamou Laye</p>
+                        </div>
+                        <span class="text-primary font-semibold mt-2 md:mt-0">2012</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Spécialité Mathématiques / Sciences physiques.
+                        Acquisition de bases solides en mathématiques, logique et sciences, préparant aux études supérieures en informatique et ingénierie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- InstaFolio-template-v3 | mouhatech.com -->
+    <!-- Tools Section -->
+    <section id="outils" class="py-12 px-6 bg-dark overflow-x-hidden">
+        <div class="container mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                Mes <span class="gradient-text">Outils</span>
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+            <p class="text-gray-400 text-center max-w-3xl mx-auto mb-12">
+                Un écosystème d'outils spécialisés que j'utilise au quotidien pour auditer, tester et sécuriser les systèmes d'information.
+            </p>
+
+            <div class="overflow-hidden relative bg-white/[0.02] py-6 md:py-8 w-screen -mx-6 md:-mx-10 px-6 md:px-10">
+                <div class="flex items-center gap-10 w-max tools-track">
+                    <!-- Première série d'outils -->
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Python</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Kali-linux.png" alt="Kali Linux" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Kali Linux</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/wireshark.png" alt="Wireshark" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Wireshark</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/metasploit.png" alt="Metasploit" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Metasploit</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Burp Suite.png" alt="Burp Suite" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Burp Suite</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/nmap.png" alt="Nmap" class="w-16 h-12">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Nmap</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Splunk.png" alt="Splunk" class="w-11 h-11" alt="Splunk">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Splunk</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Nessus.png" class="w-11 h-11" alt="Nessus">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Nessus</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Hashcat.png" class="w-11 h-11" alt="Hashcat">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Hashcat</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Snort.png" class="w-11 h-11" alt="Snort">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Snort</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/elasticsearch.png" class="w-11 h-11" alt="elasticsearch">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Elastic (ELK)</span>
+                    </div>
+
+                    <!-- Deuxième série défilement infini -->
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Python</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Kali-linux.png" alt="Kali Linux" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Kali Linux</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/wireshark.png" alt="Wireshark" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Wireshark</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/metasploit.png" alt="Metasploit" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Metasploit</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Burp Suite.png" alt="Burp Suite" class="w-11 h-11">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Burp Suite</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/nmap.png" alt="Nmap" class="w-16 h-12">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Nmap</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Splunk.png" alt="Splunk" class="w-11 h-11" alt="Splunk">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Splunk</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Nessus.png" class="w-11 h-11" alt="Nessus">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Nessus</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Hashcat.png" class="w-11 h-11" alt="Hashcat">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Hashcat</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/Snort.png" class="w-11 h-11" alt="Snort">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Snort</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-2 px-5 py-2">
+                        <img src="images/elasticsearch.png" class="w-11 h-11" alt="elasticsearch">
+                        <span class="text-sm font-semibold tracking-widest uppercase text-gray-200 whitespace-nowrap">Elastic (ELK)</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- InstaFolio-template-v3 | mouhatech.com -->
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-4">
+                Me <span class="gradient-text">Contacter</span>
+            </h2>
+            <div class="w-24 h-1 bg-primary mx-auto mb-12"></div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Restons en contact</h3>
+                    <p class="text-gray-400 mb-8">
+                        Vous avez un projet de cybersécurité ? Une question sur la protection de vos systèmes ? 
+                        N'hésitez pas à me contacter, je serai ravi d'échanger avec vous.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Email</p>
+                                <p class="text-white font-semibold">moustapha.ndao@email.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Téléphone</p>
+                                <p class="text-white font-semibold">+221 77 473 13 41</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Localisation</p>
+                                <p class="text-white font-semibold">Sénégal, Dakar</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Temps de réponse</p>
+                                <p class="text-white font-semibold">Sous 3h en moyenne</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4 mt-12">
+                        <a href="#LinkedIn" onclick="oups(event)" class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#github" onclick="oups(event)" class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#Twitter" onclick="oups(event)" class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                            </svg>                            
+                        </a>
+                        <a href="#TikTok" onclick="oups(event)" class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center hover:bg-primary/30 transition">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.59-1.01V14.5c.03 2.14-.6 4.31-2.09 5.86-1.56 1.7-4.04 2.45-6.24 1.94-2.58-.5-4.63-2.73-5.04-5.28-.54-2.73.66-5.74 3.01-7.14 1.17-.74 2.57-1.1 3.94-.96v4.03c-.8-.13-1.66.02-2.34.46-.96.59-1.44 1.79-1.2 2.89.2 1.08 1.14 1.99 2.24 2.11 1.25.17 2.6-.4 3.19-1.5.31-.53.43-1.15.41-1.77V0h.16Z"/>
+                            </svg>                                                        
+                        </a>
+                    </div>
+                </div>
+                <div class="glass-effect rounded-xl p-8">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold mb-2">Nom</label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg focus:outline-none focus:border-primary text-white" placeholder="Votre nom Complet">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg focus:outline-none focus:border-primary text-white" placeholder="Votre adresse email">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold mb-2">Sujet</label>
+                            <input type="text" id="subject" name="subject" required
+                                   class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg focus:outline-none focus:border-primary text-white" placeholder="Sujet de votre message">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                      class="w-full px-4 py-3 bg-dark border border-gray-700 rounded-lg focus:outline-none focus:border-primary text-white" placeholder="Votre message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full inline-flex justify-center px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition glow-effect">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                                </svg>
+                            Envoyer le Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- InstaFolio-template-v3 | mouhatech.com --> 
+    <!-- Footer -->
+    <footer class="py-8 px-12 border-t border-gray-800 flex items-center justify-between md:flex-row flex-col">
+        <p class="text-gray-400 text-center">
+            © 2026 Moustapha Ndao. Tous droits réservés. <span class="hidden md:inline-block">| Ingénieur Cybersécurité</span>
+        </p>
+        <p class="text-gray-400 text-center">
+            <a href="https://mouhatech.com" target="_blank">Conçu avec <i class="fa-solid fa-heart text-primary"></i> par <span class="underline">MouhaTech</span></a>
+        </p>
+    </footer>
+
+   <script src="script.js"></script>
+
+   <!-- jQuery -->
+   <script src="libs/jquery-3.7.1.min.js"></script>
+
+   <!-- Wow js -->
+   <script src="libs/wow.min.js"></script>
+   
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+   <script>
+       new WOW().init();  
+   </script>
+</body>
+</html>

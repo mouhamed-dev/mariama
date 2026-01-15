@@ -1,0 +1,104 @@
+/* InstaFolio-template-v3 | mouhatech.com */
+::selection {
+    background-color: #8a5cf673;
+    color: #fff;
+}
+* {
+    font-family: 'Inter', sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+    cursor: url("images/cursor.png") 0 0, auto;
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    z-index: 999;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #060c29;
+    opacity: 5;
+    z-index: 100;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e6e2e2;
+  }
+  
+
+
+
+.gradient-text {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.glass-effect {
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+}
+.tech-badge {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+.glow-effect {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+/* Section Mes outils - Animation de défilement infini (CSS pur nécessaire) */
+.tools-track {
+    animation: tools-scroll 18s linear infinite;
+}
+
+.tools-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes tools-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Désactive le fond blanc de l'autofill sur Chrome, Edge et autres */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  background-color: transparent !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
