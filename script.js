@@ -1,4 +1,4 @@
-// InstaFolio-template-v3 | mouhatech.com -->
+// InstaFolio | mouhatech.com -->
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById("mobile-menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
@@ -32,7 +32,7 @@ mobileMenuBtn.addEventListener("click", (e) => {
   toggleMenu();
 });
 
-// Fermer le menu quand on clique à l'extérieur
+
 document.addEventListener("click", (e) => {
   if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
     if (!mobileMenu.classList.contains("hidden")) {
@@ -41,14 +41,14 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// Fermer le menu quand on scroll
+
 window.addEventListener("scroll", () => {
   if (!mobileMenu.classList.contains("hidden")) {
     closeMenu();
   }
 });
+  
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -63,7 +63,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Scroll animation on scroll
+
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -86,30 +86,6 @@ document.querySelectorAll(".card-hover, .glass-effect").forEach((card) => {
   observer.observe(card);
 });
 
-// Bloque clic droit
-document.addEventListener("contextmenu", (e) => {
-  e.preventDefault();
-  alert("⚠️ Pour des raisons de sécurité, cette action est désactivée.");
-});
-
-// Bloque F12, Ctrl+U, Ctrl+S, Ctrl+Shift+I
-document.addEventListener("keydown", (e) => {
-  const key = e.key.toLowerCase();
-  const ctrl = e.ctrlKey || e.metaKey;
-
-  if (
-    key === "f12" ||
-    (ctrl && (key === "u" || key === "s")) ||
-    (ctrl && (key === "p" || key === "o")) ||
-    (ctrl && key === "c") ||
-    (ctrl && e.shiftKey && key === "i") ||
-    (ctrl && e.shiftKey && key === "j")
-  ) {
-    e.preventDefault();
-    e.stopPropagation();
-    alert("⚠️ Pour des raisons de sécurité, cette action est désactivée.");
-  }
-});
 
 // Form submission
 document
